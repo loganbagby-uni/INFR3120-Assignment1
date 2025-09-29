@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #919AA3;
+}
+
+h1{
+    text-align: center;
+    background-color: #6d7a94;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%; 
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar ul{
+   list-style-type: none;
+   background-color: #6d7a94; 
+   padding: 0px;
+   margin: 0px; 
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%; 
+}
+
+.navbar li{
+    flex: 1;
+}
+
+.navbar a{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6d7a94;
+}
+
+.navbar a:hover {
+    background-color: #4a5568;
+}
