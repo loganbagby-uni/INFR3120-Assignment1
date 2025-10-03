@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 1025px)">
+    <title>Contact Me</title>
 </head>
 
 <body>
@@ -19,23 +22,31 @@
     </nav>
 
     <main>
+        <!--Contact section with form-->
         <section class="contact">
             <h1>Contact me</h1>
 
-            <form class="contact-form" action="#" method="post">
+            <!--Contact form with validation-->
+            <form class="contact-form" action="mailto:logan.bagby@ontariotechu.net" method="post" enctype="text/plain">
+
+                <!-- Name input field with validation -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required placeholder="First Last Name">
 
+                <!--Email input with built-in email validation-->
                 <label for="email">Email:</label>
                 <input type="email" id="email" required placeholder="example@gmail.com">
 
+                <!--Phone number with pattern validation-->
                 <label for="phone">Cell No.:</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="123-456-7890" required>
 
+                <!--Comments textarea-->
                 <label for="comments">Comments:</label>
                 <textarea id="comments" name="comments" rows="6" required placeholder="Comment's"></textarea>
 
+                <!--Submit button-->
                 <button type="submit">Submit</button>
             </form>
         </section>
