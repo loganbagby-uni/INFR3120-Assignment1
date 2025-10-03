@@ -18,8 +18,31 @@
         </ul>
     </nav>
 
+    <main>
+        <section class="contact">
+            <h1>Contact me</h1>
+
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="First Last Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="example@gmail.com">
+
+                <label for="phone">Cell No.:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="6" required placeholder="Comment's"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="footer">
-        <p>Footer</p>
+        <p>© 2025 by <b>Logan Bagby, logan.bagby@ontariotechu.net</b></p>
     </footer>
 </body>
 
